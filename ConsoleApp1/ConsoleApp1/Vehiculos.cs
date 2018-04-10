@@ -9,8 +9,8 @@ namespace ConsoleApp1
     class Vehiculos
     {
         string tipo;
-        int costo;
-        public Vehiculos(string tipoveh, int mcosto)
+        string costo;
+        public Vehiculos(string tipoveh, string mcosto)
         {
             tipo = tipoveh;
             costo = mcosto;

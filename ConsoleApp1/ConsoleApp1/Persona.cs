@@ -8,9 +8,15 @@ namespace ConsoleApp1
 {
     class Persona
     {
-        bool licencia_para;
+        string nombre;
+        public Persona(string mnombre)
+        {
+            nombre = mnombre;
+        }
 
-        public bool A()
+        public bool licencia_para;
+
+        public bool A(bool licencia_para)
         {
             if (licencia_para == true)
             {

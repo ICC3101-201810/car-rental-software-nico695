@@ -9,9 +9,39 @@ namespace ConsoleApp1
     class Arriendo
     {
         List<Sucursales> sucursales = new List<Sucursales>();
-        List<Cliente> cliente = new List<Cliente>();
-
+        List<Persona> persona = new List<Persona>();
+        List<Empresa> empresa = new List<Empresa>();
         List<Accesorios> accesorio = new List<Accesorios>();
+        List<Vehiculos> vehiculoa = new List<Vehiculos>();
+
+        public Arriendo()
+        {
+        }
+
+        public void AgregarSucursal(Sucursales sucursal)
+        {
+            sucursales.Add(sucursal);
+        }
+
+        public void AgregarPersona(Persona ppersona)
+        {
+            persona.Add(ppersona);
+        }
+
+        public void AgregarEmpresa(Empresa empresaa)
+        {
+            empresa.Add(empresaa);
+        }
+
+        public void AgregarAccesorios(Accesorios acc)
+        {
+            accesorio.Add(acc);
+        }
+
+        public void AgregarVehiculo(Vehiculos vehiculoas)
+        {
+            vehiculoa.Add(vehiculoas);
+        }
 
     }
 }

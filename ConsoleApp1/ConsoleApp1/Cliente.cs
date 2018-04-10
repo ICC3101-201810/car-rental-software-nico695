@@ -6,8 +6,27 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    public enum t_cliente { persona, empresa };
     class Cliente
     {
+
+        public string Tipo;
+
+        public Cliente(string Eltipo)
+        {
+
+            Tipo = Eltipo;
+        }
+
+        public bool checkearcliente(string tipo)
+        {
+            if (tipo == "Empresa") ;
+            {
+                return true;
+
+            }
+            return false;
+        }
+
+
     }
 }

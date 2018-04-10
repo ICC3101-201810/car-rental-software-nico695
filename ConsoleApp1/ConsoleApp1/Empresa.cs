@@ -8,8 +8,13 @@ namespace ConsoleApp1
 {
     class Empresa
     {
+        string nombre;
+        public Empresa(string nonombre)
+        {
+            nombre = nonombre;
+        }
         bool autorizacion;
-        public bool Autoriza()
+        public bool Autoriza(bool autorizacion)
         {
             if (autorizacion == true)
             {

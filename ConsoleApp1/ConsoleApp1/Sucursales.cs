@@ -8,13 +8,17 @@ namespace ConsoleApp1
 {
     class Sucursales
     {
+        string nombre;
+        public Sucursales(string nnombre)
+        {
+            nombre = nnombre;
+        }
         List<Vehiculos> vehiculos = new List<Vehiculos>();
 
-        public void Agregarv(string vehicls)
+        public void Agregarv(Vehiculos vehiculo)
         {
-            string vh;
-            vh = vehicls;
-            vehiculos.Add(vh);
+            
+            vehiculos.Add(vehiculo);
 
         }
 
