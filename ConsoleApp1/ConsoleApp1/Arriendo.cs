@@ -13,6 +13,7 @@ namespace ConsoleApp1
         List<Empresa> empresa = new List<Empresa>();
         List<Accesorios> accesorio = new List<Accesorios>();
         List<Vehiculos> vehiculoa = new List<Vehiculos>();
+        List<Auto> vehiculoauto = new List<Auto>();
 
         public Arriendo()
         {
@@ -41,7 +42,15 @@ namespace ConsoleApp1
         public void AgregarVehiculo(Vehiculos vehiculoas)
         {
             vehiculoa.Add(vehiculoas);
+            
         }
+
+        public void AgregarAuto(Auto aas)
+        {
+            vehiculoauto.Add(aas);
+
+        }
+
 
     }
 }

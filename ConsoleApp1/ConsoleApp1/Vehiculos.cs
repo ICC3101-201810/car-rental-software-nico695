@@ -6,16 +6,41 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class Vehiculos
+    public class Vehiculos
     {
         string tipo;
         string costo;
-        public Vehiculos(string tipoveh, string mcosto)
+        int stock;
+        public Vehiculos(string tipoveh, string mcosto,int stocks)
         {
             tipo = tipoveh;
             costo = mcosto;
+            stock = stocks;
         }
 
 
+
+        public void StockArriendo(Vehiculos vehiculoas,int t)
+        {
+            vehiculoas.stock=vehiculoas.stock - t;
+        }
+        public void Stockdevolucion(Vehiculos vehiculoas, int t)
+        {
+            vehiculoas.stock = vehiculoas.stock + t;
+        }
+
     }
+    public class Auto:Vehiculos
+    {
+        string tipoa;
+        string bd;
+        public Auto(string tipoveh, string mcosto, int stocks,string tipoaa,string bdd):base(tipoveh,mcosto,stocks)
+        {
+            tipoa = tipoaa;
+            bd = bdd;
+        }
+    }
+    
+
+    
 }
